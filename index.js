@@ -35,3 +35,15 @@ function getvalue(){
 
     
 }
+
+var btn = document.getElementById('btn');
+btn.addEventListener('click', function(){
+    btn.style.display  = 'none'
+})
+
+var list = document.createElement('list');
+function replaceContent(){
+    list.innerHTML = "<li>mecury</li>" + "<li>Gas</li>" + "<li>Earth</li>"
+    alert(list)
+}
+replaceContent();
